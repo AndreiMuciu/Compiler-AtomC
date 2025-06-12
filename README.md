@@ -118,14 +118,14 @@ Generates bytecode for the virtual machine.
 Stack-based virtual machine for code execution.
 
 **Instruction Set:**
-- **Stack Operations:** *PUSH_I*, *PUSH_D* (push constants)
-- **Memory Operations:** *FPLOAD*, *FPSTORE* (frame pointer relative), *LOAD_I*, *LOAD_F* (dereference)
-- **Arithmetic:** *ADD_I*, *ADD_D*, *SUB_I*, *SUB_F*, *MUL_I*, *MUL_F*, *DIV_I*, *DIV_F*
-- **Comparison:** *LESS_I*, *LESS_D*
-- **Control Flow:** *JMP*, *JF*, *JT* (jumps)
-- **Function Calls:** *CALL*, *CALL_EXT*, *ENTER*, *RET*, *RET_VOID*
-- **Type Conversion:** *CONV_I_F*, *CONV_F_I*
-- **Utility:** *NOP*, *DROP*, *HALT*
+- **Stack Operations:** `PUSH_I`, `PUSH_D` (push constants)
+- **Memory Operations:** `FPLOAD`, `FPSTORE` (frame pointer relative), `LOAD_I`, `LOAD_F` (dereference)
+- **Arithmetic:** `ADD_I`, `ADD_D`, `SUB_I`, `SUB_F`, `MUL_I`, `MUL_F`, `DIV_I`, `DIV_F`
+- **Comparison:** `LESS_I`, `LESS_D`
+- **Control Flow:** `JMP`, `JF`, `JT` (jumps)
+- **Function Calls:** `CALL`, `CALL_EXT`, `ENTER`, `RET`, `RET_VOID`
+- **Type Conversion:** `CONV_I_F`, `CONV_F_I`
+- **Utility:** `NOP`, `DROP`, `HALT`
 
  **VM Architecture:**
 - **Stack:** 10,000-element value stack
@@ -144,22 +144,22 @@ Common utility functions for memory management and file operations.
 
 #### AtomC Language Features
 Data Types
-- **Primitive Types:** *int*, *double*, *char*, *void*
+- **Primitive Types:** `int`, `double`, `char,` `void`
 - **Arrays:** Single-dimensional arrays with optional size specification
 - **Frame Pointer (FP):** User-defined composite types
 
 Control Structures
-- **Conditional:** *if-else* statements
-- **Loops:** *while* loops
+- **Conditional:** `if-else` statements
+- **Loops:** `while` loops
 - **Functions:** Function definitions with parameters and return values
 
 Operations
-- **Arithmetic:** +, -, *, /
-- **Relational:** <, <=, >, >=, ==, !=
-- **Logical:** &&, ||, !
-- **Assignment:** =
-- **Array Indexing:** *array[index]*
-- **Structure Access:** *struct.member*
+- **Arithmetic:** `+`, `-`, `*`, `/`
+- **Relational:** `<`, `<=`, `>`, `>=`, `==`, `!=`
+- **Logical:** &&, `||`, `!`
+- **Assignment:** `=`
+- **Array Indexing:** `array[index]`
+- **Structure Access:** `struct.member`
 
 Example AtomC Program
 ```c
