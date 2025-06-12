@@ -51,10 +51,10 @@ Implements recursive descent parsing for AtomC grammar.
 - **Types**: Basic types (int, double, char), arrays, structures
 
 **Key Functions:**
-- **expr()**: Expression parsing with operator precedence
-- **stm()**: Statement parsing
-- **varDef(), structDef(), fnDef()**: Declaration parsing
-- **typeBase()**: Type parsing
+- `expr()`: Expression parsing with operator precedence
+- `stm()`: Statement parsing
+- `varDef()`, `structDef()`, `fnDef()`: Declaration parsing
+- `typeBase()`: Type parsing
 
 #### 3. Symbol Table and Domain Analysis (ad.c, ad.h)
 Manages symbols and scoping through a hierarchical domain system.
@@ -101,10 +101,10 @@ typedef struct{
 ```
 
 **Key Functions:**
-- **canBeScalar()**: Checks if type can be used as scalar
-- **convTo()**: Type conversion compatibility
-- **arithTypeTo()**: Arithmetic operation result type
-- **findSymbolInList()**: Symbol lookup in specific lists
+- `canBeScalar()`: Checks if type can be used as scalar
+- `convTo()`: Type conversion compatibility
+- `arithTypeTo()`: Arithmetic operation result type
+- `findSymbolInList()`: Symbol lookup in specific lists
 
 - #### 5. Code Generation (gc.c, gc.h)
 Generates bytecode for the virtual machine.
@@ -138,9 +138,9 @@ Common utility functions for memory management and file operations.
 
 
 **Functions:**
-- **safeAlloc()** Safe memory allocation with error checking
-- **loadFile()** File loading into memory
-- **err()** Error reporting and program termination
+- `safeAlloc()` Safe memory allocation with error checking
+- `loadFile()` File loading into memory
+- `err()` Error reporting and program termination
 
 #### AtomC Language Features
 Data Types
